@@ -1,9 +1,17 @@
 # airdrop-util
 Simple UI to interface with CCoin Airdrop
 
-// m/44'/60'/0'/0/0 
-0x7821586f1dd485a73e095E75ED42FcB4CcF6EDb7 
-0x0240f38ab6c45c56435963530938d7d4c5f2718c27b6d2848437d3049700bbb565 
-0x499725ec7726c16fe1446c5d93f4468befde29d833c133d81a7f7e27fd70848f
+## Usage
 
-196749ed808372060eaeffe10e56de82a48829fcf52199847e1e1db4b780ced0
+Install dependencies and run development server
+
+```sh
+$ yarn
+$ yarn start
+```
+
+Now to use the UI correctly make sure you;
+
+    1. Set the URL of the Ethereum node you are connecting to (i.e: http://localhost:8545)
+    2. Set the address of the CCOIN contract
+    3. Set the account to use for airdropping, input your private key hex

@@ -60,7 +60,7 @@ class AccountInfo extends Component {
             <Input type='text' 
                 onChange={(e, rawPrivateKey) => this.setState({rawPrivateKey: rawPrivateKey.value})} 
                 placeholder='Enter private key' 
-                action={<Button icon='key' onClick={this.fromRaw.bind(this)} 
+                action={<Button disabled={!this.props.tokenUtil.provider || !this.props.tokenUtil.contractAddress} icon='key' onClick={this.fromRaw.bind(this)} 
                 color='teal' content='Import' />}
             /> 
         );
